@@ -8,14 +8,14 @@ require (
 	github.com/dennwc/iters v1.2.2
 	github.com/dustin/go-humanize v1.0.1
 	github.com/elliotchance/orderedmap/v3 v3.1.0
-	github.com/florianl/go-tc v0.4.7
+	github.com/florianl/go-tc v0.4.8
 	github.com/frostbyte73/core v0.1.1
 	github.com/gammazero/deque v1.2.1
 	github.com/gammazero/workerpool v1.2.1
 	github.com/google/uuid v1.6.0
 	github.com/google/wire v0.7.0
 	github.com/gorilla/websocket v1.5.3
-	github.com/hashicorp/go-version v1.8.0
+	github.com/hashicorp/go-version v1.9.0
 	github.com/hashicorp/golang-lru/v2 v2.0.7
 	github.com/jellydator/ttlcache/v3 v3.4.0
 	github.com/jxskiss/base62 v1.1.0
@@ -24,7 +24,7 @@ require (
 	github.com/livekit/protocol v1.45.3
 	github.com/livekit/psrpc v0.7.1
 	github.com/mackerelio/go-osstat v0.2.7
-	github.com/magefile/mage v1.17.0
+	github.com/magefile/mage v1.17.1
 	github.com/maxbrunsfeld/counterfeiter/v6 v6.12.2
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/olekukonko/tablewriter v1.1.4
