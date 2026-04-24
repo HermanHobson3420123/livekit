@@ -99,13 +99,7 @@ func startServer(c *cli.Context) error {
 	sigChan := make(chan os.Signal, 1)
 	// Also handle SIGHUP so the process can be gracefully restarted by process
 	// managers (e.g. systemd) without dropping active participant sessions.
+	// Note: SIGUSR1 could also be useful here for log rotation in the future.
 	signal.Notify(sigChan, syscall.SIGINT, syscall.SIGTERM, syscall.SIGQUIT, syscall.SIGHUP)
 
-	go func() {
-		sig := <-sigChan
-		logger.Infow("exit requested, shutting down", "signal", sig)
-		s.Stop(false)
-	}()
-
-	return s.Start()
-}
+	go func()
